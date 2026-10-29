@@ -1,0 +1,280 @@
+/* chores.css */
+
+.chores {
+  padding: 2rem 1.25rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.chores__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.chores__eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-primary);
+  margin: 0 0 0.5rem;
+}
+
+.chores__title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-foreground);
+  margin: 0 0 0.5rem;
+}
+
+.chores__intro {
+  font-size: 0.9375rem;
+  color: var(--color-muted-foreground);
+  margin: 0;
+}
+
+.chores__add-button {
+  align-self: flex-start;
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border: none;
+  border-radius: 9999px;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chores__add-button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* Stat cards */
+
+.chores__stats {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.roommate-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-radius: var(--radius-2xl);
+  padding: 1.25rem;
+}
+
+.roommate-stat-card__avatar {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--color-primary-foreground);
+  flex-shrink: 0;
+}
+
+.roommate-stat-card__info h3 {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin: 0 0 0.125rem;
+}
+
+.roommate-stat-card__info p {
+  font-size: 0.8125rem;
+  color: var(--color-muted-foreground);
+  margin: 0;
+}
+
+.roommate-stat-card--maya {
+  background-color: var(--color-maya-soft);
+}
+.roommate-stat-card--maya .roommate-stat-card__avatar {
+  background-color: var(--color-maya);
+}
+
+.roommate-stat-card--jordan {
+  background-color: var(--color-jordan-soft);
+}
+.roommate-stat-card--jordan .roommate-stat-card__avatar {
+  background-color: var(--color-jordan);
+}
+
+.roommate-stat-card--priya {
+  background-color: var(--color-priya-soft);
+}
+.roommate-stat-card--priya .roommate-stat-card__avatar {
+  background-color: var(--color-priya);
+}
+
+/* Chore list */
+
+.chores__list {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  background-color: var(--color-card);
+}
+
+.chores__list-header {
+  display: none;
+}
+
+.chore-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.chore-row:last-child {
+  border-bottom: none;
+}
+
+.chore-row--completed .chore-row__name {
+  text-decoration: line-through;
+  color: var(--color-muted-foreground);
+}
+
+.chore-row__name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.chore-row__check {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border: 1.5px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-primary-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.chore-row--completed .chore-row__check {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.chore-row__name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin: 0;
+}
+
+.chore-row__assignee {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+}
+
+.chore-row__avatar {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-muted);
+  color: var(--color-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.chore-row__schedule {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+}
+
+.chore-row__status-cell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chore-row__status {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+}
+
+.chore-row__status--open {
+  background-color: var(--color-maya-soft);
+  color: var(--color-maya-text);
+}
+
+.chore-row__status--complete {
+  background-color: var(--color-jordan-soft);
+  color: var(--color-jordan-text);
+}
+
+.chore-row__swap {
+  background: none;
+  border: none;
+  color: var(--color-muted-foreground);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.chore-row__swap:hover {
+  color: var(--color-foreground);
+}
+
+/* Desktop: table-style layout */
+
+@media (min-width: 768px) {
+  .chores__header {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .chores__stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .chores__list-header {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr 1fr;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    background-color: var(--color-muted);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--color-muted-foreground);
+  }
+
+  .chore-row {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .chore-row__status-cell {
+    justify-content: flex-end;
+    gap: 0.75rem;
+  }
+}

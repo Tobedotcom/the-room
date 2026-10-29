@@ -1,0 +1,30 @@
+/* Replaces .features__card, .features__icon, .features__label, .features__card-title, .features__card-text */
+
+.feature-card {
+  border: 1px solid var(--color-border);
+  border-radius: 1.25rem;
+  padding: 1.75rem 1.5rem;
+  background-color: var(--color-card);
+}
+
+.feature-card__icon {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.feature-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin: 0 0 0.625rem;
+}
+
+.feature-card__description {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--color-muted-foreground);
+  margin: 0;
+}

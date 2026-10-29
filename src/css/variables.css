@@ -1,0 +1,35 @@
+:root {
+  /* Theme tokens */
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+  --color-primary: oklch(0.67 0.16 49);
+  --color-primary-foreground: oklch(0.99 0.01 80);
+  --color-primary-hover: #b56b3d;
+  --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.04);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-border: oklch(0.922 0 0);
+  --color-ring: oklch(0.708 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+
+  /* Roommate identity colors */
+  --color-maya: #efa46b;
+  --color-maya-soft: #fff1e5;
+  --color-maya-text: #9a4f1b;
+
+  --color-jordan: #9db7a5;
+  --color-jordan-soft: #eaf3ed;
+  --color-jordan-text: #3f6b4d;
+
+  --color-priya: #b3a4c8;
+  --color-priya-soft: #f0ecf6;
+  --color-priya-text: #65527f;
+
+  /* Radius */
+  --radius-base: 0.625rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: calc(0.625rem * 1.4);
+  --radius-2xl: calc(0.625rem * 1.8);
+}
